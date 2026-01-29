@@ -6,3 +6,4 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - run: pip install nbconvert ipykernel
+      - run: python -m nbconvert -to markdown --execute 29STY.ipynb
