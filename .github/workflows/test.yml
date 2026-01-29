@@ -7,3 +7,6 @@ jobs:
       - uses: actions/checkout@v6
       - run: pip install nbconvert ipykernel
       - run: python -m nbconvert --to markdown --execute 29STY.ipynb
+      - uses: actions/upload-artifact@v4
+        with:
+          path: 29STY.md
